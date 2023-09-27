@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="my_style.css" rel="stylesheet">
+    <title>Assignment 2</title>
+    <!-- Author: Esenwa Michael, 000876059. Date: 1st Febuary, 2023 -->
+    <script src="./my_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="m-0 border-0 text-light">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="index.html">
+                    <img src="./img/boxes.svg" alt="box_icon">
+                    Assignment 2
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav px-3 ">
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page" href="#first">First</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#second">Second</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#third">Third</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-root-margin="0px 0px -40px"
+        data-bs-smooth-scroll="true" tabindex="0">
+        <div class="parallax"></div>
+        <div id="first" class="read p-3">
+            <h2>Group 1: Question 1</h2>
+            <p> Read the input from the document, if the input is numeric and if the input is 0, or if it’s between
+                13 and 17 inclusive, output “In range” otherwise output “Out of range”. If it’s not a number
+                output “Not a number”.
+            </p>
+            <h3>Answer</h3>
+            <div class="answer">
+                <label for="q1_input">Input</label>
+                <input class="form-control" type="text" id="q1_input" name="q1_input"
+                    onchange="group_1_choice_1()"><br><br>
+                <p>
+                    <button class="btn mybutton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                        click me
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample1">
+
+                    <textarea class="card card-body" id="q1_output" readonly></textarea>
+
+                </div>
+
+
+            </div>
+
+
+            <h2>Group 1: Question 2</h2>
+            <p>
+                Read the input from the document and if it is a positive number interpret it as some number of
+                days. Convert it into years, months, days. To make things easier, assume there is 365.25 days
+                per year and that every month is 30.44 days. Left over days output may have a decimal portion,
+                but years and months should be integers. Output these values with appropriate labels. If the
+                input is not a number output “Non-numeric or negative input”.
+            </p>
+            <p>
+                <strong>Note:</strong> decimal math is prone to slight rounding errors, don’t be concerned about an
+                answer like
+                14.779999999 vs 14.78 if you see it. For added challenge use Math.round to guarantee 2
+                decimal places.
+            </p>
+            <p>
+                Example: input: 2175.87 output: 5 years, 11 months, and 14.78 days
+            </p>
+            <h3>Answer</h3>
+
+            <div class="answer">
+                <label for="q2_input">Input</label>
+                <input class="form-control" type="text" id="q2_input" name="q2_input"
+                    onchange="group_1_choice_2()"><br><br>
+
+                <p>
+                    <button  class="btn mybutton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                        click me
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample2">
+
+                    <textarea class="card card-body" id="q2_output" readonly></textarea>
+
+                </div>
+            </div>
+        </div>
+        <div class="parallax"></div>
+        <div id="second" class="read p-3">
+            <h2>Group 2: Question 1</h2>
+            <p> Read the input from the document and if the input is “a”, “e”, “i”, “o”, or “u” output “A Vowel”.
+                If the input is “y” output “Sometimes”. In all other cases output “Not a vowel”. Your function
+                should be case insensitive, i.e., “A” or “a” would both show “A Vowel”.
+
+            </p>
+            <h3>Answer</h3>
+            <div class="answer">
+                <label for="q3_input">Input</label>
+                <input class="form-control" type="text" id="q3_input" name="q3_input"
+                    onchange="group_2_choice_1()"><br><br>
+                <p>
+                    <button  class="btn mybutton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                        click me
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample3">
+
+                    <textarea class="card card-body" id="q3_output" readonly></textarea>
+
+                </div>
+            </div>
+
+            <h2>Group 2: Question 3</h2>
+            <p> Read the input from the document. If it is a positive integer, output the factorial of the input
+                value. Otherwise, output “Cannot compute factorial value”. The factorial function is defined as
+                multiply all the numbers from 1 to the value together. For example, the factorial of 5 is
+                5*4*3*2*1 = 120. Only compute this value using a loop, no other formulations are allowed.
+            </p>
+            <h3>Answer</h3>
+            <div class="answer">
+                <label for="q4_input">Input</label>
+                <input class="form-control" type="text" id="q4_input" name="q4_input"
+                    onchange="group_2_choice_3()"><br><br>
+                <p>
+                    <button  class="btn mybutton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                        click me
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample4">
+
+                    <textarea class="card card-body" id="q4_output" readonly></textarea>
+
+                </div>
+            </div>
+        </div>
+        <div class="parallax"></div>
+        <div id="third" class="read p-3">
+            <h2>Group 3: Question 1</h2>
+            <p> Read the input from the document. This string must be between 10 and 20 characters long,
+                inclusive, and consist of only 0’s and 1’s. If the string does not meet these conditions, output the
+                result 0. If the input is valid then interpret it as a binary number. Using only loops and substring
+                operations calculate the integer value of the binary number. For simplicity, we will assume “little
+                endian” numbers ... the smallest number is on the left and get bigger moving to the right. Recall
+                that binary values are powers of 2, with the first few values being 2<sup>0</sup> = 1, 2<sup>1</sup> =
+                2, 2<sup>0</sup> + 2<sup>1</sup> = 3, etc.
+            </p>
+            <h3>Answer</h3>
+            <div class="answer">
+                <label for="q5_input">Input</label>
+                <input class="form-control" required="" type="text" id="q5_input" name="q5_input"
+                    onchange="group_3_choice_1()"><br><br>
+                <p>
+                    <button class="btn mybutton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                        click me
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample5">
+
+                    <textarea class="card card-body" id="q5_output" readonly></textarea>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax"></div>
+
+
+    </main>
+    <footer class="bg-dark text-center text-lg-start container-fluid">
+        <div class="text-center p-3">
+            <p class="text-center">&copy; 2023 Michael Esenwa - Mohawk College </p>
+
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

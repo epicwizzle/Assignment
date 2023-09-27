@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/* This Stylesheet is use in the index. html.
+    Date: 1st Febuary, 2023
+    author: Esenwa Michael 000876059
+*/
+
+/* Body Style */
+body {
+    background-color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header Style */
+header {
+    background-color: #eb5757;
+    color: #fff;
+    border: #07182E 2px solid;
+    box-shadow: 0 0 10px #07182E;
+
+}
+
+/* Nav style */
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
+
+
+.navbar-brand img {
+    filter: invert(100%) sepia(5%) saturate(21%) hue-rotate(236deg) brightness(108%) contrast(105%);
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav li a:hover {
+    color: #fff;
+}
+
+.navbar-nav li a.active:hover {
+    color: #fff;
+}
+
+.navbar-nav li a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #eb5757;
+    margin-top: 5px;
+}
+
+.navbar-nav li a.active:hover::after {
+    background-color: #fff;
+}
+
+.navbar-nav li a:hover::after {
+    background-color: #fff;
+}
+
+.navbar-nav li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #eb5757;
+    margin-top: 5px;
+}
+
+/* Main Style */
+.parallax {
+    /* The image used */
+    background-image: url("./img/1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.read {
+    border: #07182E 2px solid;
+    box-shadow: 0 0 10px #07182E;
+    background-color: #eb5757;
+    height: auto;
+}
+
+.read:hover {
+    background-color: #07182E;
+    color: #eb5757;
+    border: #eb5757 2px solid;
+    box-shadow: 0 0 10px #eb5757;
+}
+
+.answer label {
+    display: block;
+}
+
+.answer input,
+.answer textarea {
+    border: #07182E 2px solid;
+    box-shadow: 0 0 10px #07182E;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.mybutton {
+    color: #fff;
+    background-color: #eb5757;
+    border-color: #07182E;
+    border: #07182E 2px solid;
+    box-shadow: 0 0 10px #07182E;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 50%;
+
+}
+
+.mybutton:hover {
+    color: #eb5757;
+    background-color: #07182E;
+    border-color: #eb5757;
+    border: #eb5757 2px solid;
+    box-shadow: 0 0 10px #eb5757;
+}
+
+.card {
+    color: black;
+}
+
+/* Footer Style */
+footer p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
